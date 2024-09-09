@@ -1,0 +1,12 @@
+name: '{{parameters.spec.stack.name}}'
+services:
+  localstack:
+    image: localstack/localstack
+    environment:
+      - SERVICES=s3
+      - DEBUG=1
+    ports:
+      - "4566:4566"  # LocalStack Gateway
+      - "4572:4572"  # S3
+    volumes:
+      - "./localstack:/tmp/localstack"

@@ -1,0 +1,16 @@
+name: '{{parameters.spec.stack.name}}'
+services:
+  db:
+    image: postgres:{{parameters.spec.version}}
+    environment:
+      POSTGRES_DB: '{{parameters.metadata.name}}'
+      POSTGRES_USER: dbadmin
+      POSTGRES_PASSWORD: password
+    ports:
+      - "5432:5432"
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080

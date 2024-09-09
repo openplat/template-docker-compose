@@ -1,0 +1,12 @@
+{
+    "template": {
+      "name": "template-docker-compose",
+      "description": "Resource template for Docker Compose",
+      "version": "0.0.1",
+      "options": {
+        "ignore": [
+          "**/**"
+        ]
+      }
+    }
+  }

@@ -1,0 +1,25 @@
+{
+    "partial": {
+      "name": "Storage",
+      "description": "Generates a Postgres CloudFormation resource",
+      "options": {
+        "ignore": [
+          "samples/**"
+        ]
+      },
+      "parameters": [
+        {
+          "type": "input",
+          "name": "spec.stack.name",
+          "message": "Stack Name",
+          "regex": "[a-zA-Z0-9-_]+"
+        },
+        {
+          "type": "input",
+          "name": "metadata.name",
+          "message": "Storage Name",
+          "regex": "[a-z0-9]+"
+        }
+      ]
+    }
+  }
