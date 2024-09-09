@@ -8,5 +8,3 @@ services:
     ports:
       - "4566:4566"  # LocalStack Gateway
       - "4572:4572"  # S3
-    volumes:
-      - "./localstack:/tmp/localstack"

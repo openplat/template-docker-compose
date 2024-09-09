@@ -1,0 +1,8 @@
+apiVersion: resources.oplat.dev/v1alpha1
+kind: Postgres
+metadata:
+    name: sampleDb
+spec:
+    storageSize: 20
+    version: 16.4
+    

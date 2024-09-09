@@ -1,0 +1,4 @@
+apiVersion: resources.oplat.dev/v1alpha1
+kind: Storage
+metadata:
+    name: odp-sample-storage
