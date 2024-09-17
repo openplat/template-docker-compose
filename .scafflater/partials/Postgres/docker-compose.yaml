@@ -1,6 +1,6 @@
 name: '{{parameters.spec.stack.name}}'
 services:
-  db:
+  {{parameters.metadata.name}}Db:
     image: postgres:{{parameters.spec.version}}
     environment:
       POSTGRES_DB: '{{parameters.metadata.name}}'
@@ -9,8 +9,8 @@ services:
     ports:
       - "5432:5432"
 
-  adminer:
-    image: adminer
+  {{parameters.metadata.name}}Adminer:
+    image: '{{parameters.metadata.name}}Adminer'
     restart: always
     ports:
       - 8080:8080
