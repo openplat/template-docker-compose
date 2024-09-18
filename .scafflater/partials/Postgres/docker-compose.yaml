@@ -1,3 +1,5 @@
+# @scf-option { "appenders": ["yaml-appender"] }
+
 name: '{{parameters.spec.stack.name}}'
 services:
   {{parameters.metadata.name}}Db:
