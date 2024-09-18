@@ -1,4 +1,4 @@
-# @scf-option { "appenders": ["yaml-appender"] }
+# @scf-option { "appenders": ["./appenders/yaml-appender"] }
 
 name: '{{parameters.spec.stack.name}}'
 services:
